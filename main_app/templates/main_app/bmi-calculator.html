@@ -1,0 +1,119 @@
+{%extends 'main_app/layout.html'%}
+{%load static%}
+{%block 'topmenu'%}
+<ul>
+    <li><a href="/">خانه</a>
+    </li>
+    <li><a href="/about">درباره ما
+        </a>
+    </li>
+    <li>
+        <a class="active" href="/bmi-calculator">محاسبه آنلاین</a>      
+    </li>
+    <li>
+        <a href="/blog">وبلاگ</a>
+    </li>
+    <li>
+        <a href="/shahrie">شهریه</a>
+    </li>
+    <li><a href="/contact">تماس با ما</a>
+    </li>
+</ul>
+{%endblock%}
+
+{%block 'toptitle'%}
+<section class="breadcrumb-wrap bg-f br-bg-3">
+    <div class="section_subtext v3 trans_text"><span>محاسبه آنلاین</span></div>
+    <div class="overlay bg-charcole op-8"></div>
+    <div class="breadcrumb-title">
+        <h2>محاسبه <span>آنلاین</span></h2>
+    </div>
+</section>
+{%endblock%}
+
+{%block 'content'%}
+<section class="bmi-wrap v1 bg-f section-padding bmi-bg-1">
+    <div class="overlay op-9 bg-mirage"></div>
+    <div class="container pos-rel">
+        <div class="section_subtext v4 trans_text">
+            <span>BMI</span>
+        </div>
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 order-xl-1 order-lg-1 order-md-2 order-2">
+                <div class="content-title v2">
+                    <h2 class="text-white">محاسبه میزان متابولیک بدن</h2>
+                    <p class="text-white">لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به
+                        مدت 40 سال استاندارد صنعت بوده است. لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می
+                        گیرد.</p>
+                </div>
+                <div class="bmi-form">
+                    <form action="#">
+                        <div class="select-gender">
+                            <div>
+                                <input type="radio" id="test1" name="radio-group" checked>
+                                <label for="test1">مرد</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="test2" name="radio-group">
+                                <label for="test2">زن</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="number" placeholder="قد / سانتی متر">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="number" placeholder="وزن / کیلوگرم">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="number" placeholder="سن">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group mb-0">
+                                    <button type="submit">دریافت میزان متابولیک بدن</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 order-xl-2 order-lg-2 order-md-1 order-1">
+                <div class="bmi-chart-wrap">
+                    <div class="content-title v3">
+                        <h2 class="text-white">نمودار BMI</h2>
+                        <p class="text-white">لورم ایپسوم به سادگی چاپ و متن را در بر می گیرد. </p>
+                    </div>
+                    <div class="bmi-chart">
+                        <div class="bmi-chart-title">
+                            <h6>عادی</h6>
+                            <h6>وضعیت وزن</h6>
+                        </div>
+                        <div class="bmi-chart-data">
+                            <p>زیر 18.5</p>
+                            <p>چاقی شدید</p>
+                        </div>
+                        <div class="bmi-chart-data">
+                            <p>18.5 - 25</p>
+                            <p>سالم</p>
+                        </div>
+                        <div class="bmi-chart-data">
+                            <p>25 - 30</p>
+                            <p>اضافه وزن</p>
+                        </div>
+                        <div class="bmi-chart-data">
+                            <p>30 و بالاتر</p>
+                            <p>چاق</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{%endblock%}

@@ -1,0 +1,170 @@
+{%extends 'main_app/layout.html'%}
+{%load static%}
+{%block 'topmenu'%}
+<ul>
+    <li><a href="/">خانه</a>
+    </li>
+    <li><a class="active" href="/about">درباره ما
+        </a>
+    </li>
+    <li>
+        <a href="/bmi-calculator">محاسبه آنلاین</a>      
+    </li>
+    <li>
+        <a href="/blog">وبلاگ</a>
+    </li>
+    <li>
+        <a href="/shahrie">شهریه</a>
+    </li>
+    <li><a href="/contact">تماس با ما</a>
+    </li>
+</ul>
+{%endblock%}
+
+{%block 'toptitle'%}
+<section class="breadcrumb-wrap bg-f br-bg-2">
+    <div class="section_subtext v3 trans_text"><span>درباره ما</span></div>
+    <div class="overlay bg-charcole op-8"></div>
+    <div class="breadcrumb-title">
+        <h2>درباره <span>ما</span></h2>
+    </div>
+</section>
+{%endblock%}
+
+{%block 'content'%}
+<section class="feature-wrap v3 s2 section-padding pos-rel mt-4">
+    <div class="img-shape-one">
+        <img src="{%static 'main_app/'%}assets/img/dumbel.png" alt="Image">
+    </div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about-img-slider v2 s2 owl-carousel">
+                    <div class="item">
+                        <div class="about-feat-img bg-f ab-bg-1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="feature-content px-0">
+                    <div class="feature-content-title">
+                        <div class="section-title v1">
+                            <h2>بهترین خدمات بدنسازی و تناسب اندام را ارائه می دهیم</h2>
+                        </div>
+                        <p>ما در باشگاه ورزشی خود با استفاده از تجهیزات پیشرفته و تیمی از مربیان حرفه‌ای، بهترین خدمات در زمینه بدنسازی و تناسب اندام را به شما ارائه می‌دهیم.</p>
+                    </div>
+                    <div class="feature-box-wrap v3">
+                        <div class="feature-box-item">
+                            <div class="feature-icon">
+                                <i class="flaticon-stationary-bike"></i>
+                            </div>
+                            <div class="feature-box-text">
+                                <h5>قدرت / وزنه های آزاد</h5>
+                                <p>با تمرکز بر تمرینات وزنه‌های آزاد، ما به شما کمک می‌کنیم تا به حداکثر قدرت بدنی و رشد عضلانی دست یابید. برنامه‌های ما برای تمامی سطوح طراحی شده‌اند، از مبتدی تا پیشرفته.</p>
+                            </div>
+                        </div>
+                        <div class="feature-box-item">
+                            <div class="feature-icon">
+                                <i class="flaticon-six-pack"></i>
+                            </div>
+                            <div class="feature-box-text">
+                                <h5>برنامه‌های تمرینی شخصی‌سازی شده</h5>
+                                <p>با توجه به نیازها و اهداف شما، ما برنامه‌های تمرینی ویژه‌ای طراحی می‌کنیم که به طور کامل با شرایط بدنی و زمان‌بندی شما منطبق است. این برنامه‌ها توسط مربیان مجرب تهیه می‌شوند تا شما را به بهترین نسخه خودتان تبدیل کنند.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="feature-box-item">
+                            <div class="feature-icon">
+                                <i class="flaticon-squad"></i>
+                            </div>
+                            <div class="feature-box-text">
+                                <h5>تمرینات هوازی</h5>
+                                <p>با تمرینات هوازی منظم، می‌توانید استقامت قلبی-عروقی خود را بهبود بخشید و به یک سبک زندگی سالم‌تر دست یابید. ما انواع کلاس‌های هوازی مانند زومبا، اسپینینگ و سایر تمرینات پرتحرک را ارائه می‌دهیم.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="promo-wrap v1">
+    <div class="container-fluid px-0">
+        <div class="row gx-0">
+            <div class="col-lg-6 col-md-6 col-12">
+                <div class="promo-item">
+                    <div class="promo-img bg-f promo-bg-8">
+                    </div>
+                    <div class="promo-content">
+                        <div class="promo-icon">
+                            <i class="flaticon-fitness"></i>
+                        </div>
+                        <div class="promo-text">
+                            <h5>ارائه سالن بدنسازی</h5>
+                            <p>باشگاه ما مجهز به مدرن‌ترین تجهیزات بدنسازی و فیتنس است. ما با ارائه محیطی کاملاً بهداشتی و مجهز، به شما این امکان را می‌دهیم تا تمرینات خود را در فضایی حرفه‌ای و مناسب انجام دهید.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+                <div class="promo-item">
+                    <div class="promo-img bg-f promo-bg-4">
+                    </div>
+                    <div class="promo-content">
+                        <div class="promo-icon">
+                            <i class="flaticon-ticket"></i>
+                        </div>
+                        <div class="promo-text">
+                            <h5>آموزش خصوصی</h5>
+                            <p>مربیان حرفه‌ای ما با ارائه برنامه‌های تمرینی اختصاصی و نظارت دقیق، به شما کمک می‌کنند تا با توجه به نیازها و اهداف خود، به بهترین نتایج ممکن دست یابید.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="blog-post-wrap section-padding_v2">
+    <div class="container">
+        <div class="row align-items-center mb-5">
+            <div class="col-md-7">
+                <div class="section-title v1">
+                    <h2 class="title">آخرین اخبار وبلاگ ما</h2>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="section-brief v1 text-md-start">
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            {% for item in akhbar %}
+            {% if forloop.counter == 2 or forloop.counter == 3 or forloop.counter == 4 %}
+            <div class="col-xl-4 col-lg-6 col-md-6">
+                <div class="blog-item style3">
+                    <div class="blog-img">
+                        <img class="img-fluid" src={{item.thumbnail.url}} alt="Image" style="width: 415px; height: 291px;">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-info">
+                            <ul class="blog-metainfo">
+                                <li><a href="{{item.safhe_khabar}}"><i class="las la-calendar"></i>{{item.day}} {{item.month}}
+                                        {{item.year}}</a></li>
+                            </ul>
+                            <h3><a href="{{item.safhe_khabar}}">{{item.title}}</a></h3>
+                            <a href="{{item.safhe_khabar}}" class="link style2">بیشتر بدانید</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{%endblock%}

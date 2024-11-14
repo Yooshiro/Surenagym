@@ -1,0 +1,47 @@
+{%extends 'main_app/layout.html'%}
+{%load static%}
+{%block 'topmenu'%}
+<ul>
+    <li><a href="/">خانه</a>
+    </li>
+    <li><a href="/about">درباره ما
+        </a>
+    </li>
+    <li>
+        <a href="/bmi-calculator">محاسبه آنلاین</a>      
+    </li>
+    <li>
+        <a href="/blog">وبلاگ</a>
+    </li>
+    <li>
+        <a class="active" href="/shahrie">شهریه</a>
+    </li>
+    <li><a href="/contact">تماس با ما</a>
+    </li>
+</ul>
+{%endblock%}
+
+{%block 'toptitle'%}
+<section class="breadcrumb-wrap bg-f br-bg-4">
+    <div class="section_subtext v3 trans_text"><span>شهریه</span></div>
+    <div class="overlay bg-charcole op-8"></div>
+    <div class="breadcrumb-title">
+        <h2> شهریه</h2>
+    </div>
+</section>
+{%endblock%}
+
+{%block 'content'%}
+<body>
+    <div class="unique-container-zyx9">
+        {%for item in shahrie%}
+        <div class="tuition-box-xz28">
+            <div class="fee-tag-aq74">{{item.title}}</div>
+            <div class="course-details-wx89">
+                <h3>{{item.price}}</h3>
+            </div>
+        </div>
+        {%endfor%}
+    </div>
+</body>
+{%endblock%}

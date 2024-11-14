@@ -1,0 +1,42 @@
+{%extends 'main_app/layout.html'%}
+{%load static%}
+
+{%block 'topmenu'%}
+<ul>
+    <li><a href="/">خانه</a>
+    </li>
+    <li><a href="/about">درباره ما
+        </a>
+    </li>
+    <li>
+        <a href="/bmi-calculator">محاسبه آنلاین</a>      
+    </li>
+    <li>
+        <a href="/blog">وبلاگ</a>
+    </li>
+    <li>
+        <a href="/shahrie">شهریه</a>
+    </li>
+    <li><a href="/contact">تماس با ما</a>
+    </li>
+</ul>
+{%endblock%}
+
+{%block 'toptitle'%}
+<section class="breadcrumb-wrap bg-f br-bg-1">
+    <div class="section_subtext v3 trans_text"><span>تماس با ما</span></div>
+    <div class="overlay bg-charcole op-8"></div>
+    <div class="breadcrumb-title">
+        <h2>تماس با <span>ما</span></h2>
+    </div>
+</section>
+{%endblock%}
+
+{%block 'content'%}
+<div class="message-container" style="background-color: #181818; border: 1px solid #909090; border-radius: 10px; padding: 70px; margin: 20px auto; max-width: 500px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+    <div class="message-content" style="color: #fff;">
+        <h3 style="color: #e8e8e8; font-size: 24px; margin-bottom: 10px;">پیام شما با موفقیت ثبت شد.</h3>
+    </div>
+</div>
+
+{%endblock%}

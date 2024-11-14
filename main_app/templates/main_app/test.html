@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    {%load static%}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<body>
+    <form action="" method="post">
+        {%csrf_token%}
+        جستجو: <input type="text" , name="skey">
+        <br/>
+        <input type="submit" value="ارسال">
+
+    </form>
+    <table>
+        <tr>
+            <td>عنوان</td>
+            <td>روز</td>
+            <td>سال</td>
+        </tr>
+    {%for item in search%}
+        <tr>
+            <td>{{item.title}}</td>
+            <td>{{item.day}}</td>
+            <td>{{item.year}}</td>
+        </tr>
+    {%endfor%}
+    </table>
+</body>
+</html>
+
+<!-- class ContactForm(forms.ModelForm):
+    class Meta:
+        model=Contact
+        fields=["name","email","phone_number","title","message"]
+        labels={
+            "name":"نام", "email":"ایمیل", "phone_number":"تلفن", "title":"موضوع", "message":"پیام شما"
+        }
+        widgets={
+            "message":forms.Textarea
+        } -->
