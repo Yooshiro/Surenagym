@@ -245,7 +245,7 @@
                     <h2 class="text-white">محاسبه میزان متابولیک بدن</h2>
                 </div>
                 <div class="bmi-form">
-                    <form action="#">
+                    <form id="bmiForm">
                         <div class="select-gender">
                             <div>
                                 <input type="radio" id="test1" name="radio-group" checked>
@@ -259,12 +259,12 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <input type="number" placeholder="قد / سانتی متر">
+                                    <input type="number" id="height" placeholder="قد / سانتی متر">
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <input type="number" placeholder="وزن / کیلوگرم">
+                                    <input type="number" id="weight" placeholder="وزن / کیلوگرم">
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -274,7 +274,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group mb-0">
-                                    <button type="submit">دریافت میزان متابولیک بدن</button>
+                                    <button type="button" onclick="calculateBMI()">دریافت میزان متابولیک بدن</button>
                                 </div>
                             </div>
                         </div>
@@ -314,6 +314,18 @@
     </div>
 </section>
 
+<script>
+function calculateBMI() {
+    var height = document.getElementById("height").value / 100; // تبدیل به متر
+    var weight = document.getElementById("weight").value;
+    if (height && weight) {
+        var bmi = weight / (height * height);
+        alert("BMI شما: " + bmi.toFixed(2));
+    } else {
+        alert("لطفاً مقدار قد و وزن را وارد کنید.");
+    }
+}
+</script>
 
 <section class="blog-post-wrap section-padding">
     <div class="container pos-rel">
