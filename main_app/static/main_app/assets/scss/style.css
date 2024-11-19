@@ -14442,16 +14442,27 @@ body {
   padding-top: 70px;
 }
 
+
+
 .tuition-box-xz28 {
   background-color: #353535;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 22%;
-  margin-bottom: 50px;
-  margin-left: 20px;
-  padding-bottom: 120px;
+  width: 90%; /* تغییر عرض برای گوشی */
+  margin-bottom: 20px; /* فاصله بین باکس‌ها */
+  margin-left: auto; /* حذف فاصله سمت چپ */
+  margin-right: auto; /* باکس‌ها رو وسط‌چین کن */
+  padding-bottom: 20px; /* تنظیم فاصله داخلی */
   overflow: hidden;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .tuition-box-xz28 {
+    width: 22%;
+    margin-left: 20px;
+    padding-bottom: 120px;
+  }
 }
 
 .fee-tag-aq74 {
