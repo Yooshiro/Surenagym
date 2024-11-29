@@ -47,25 +47,25 @@ def contact(request):
     return render(request,"main_app/contact.html",context={'akhbar':akhbar,'info':info,"f":f})
 
 def khabar1(request):
-    return render(request,"main_app/Khabar 1.html",context={'akhbar':akhbar,'info':info})
+    return render(request,"main_app/Khabar1.html",context={'akhbar':akhbar,'info':info})
 
 def khabar2(request):
-    return render(request,"main_app/Khabar 2.html",context={'akhbar':akhbar,'info':info})
+    return render(request,"main_app/Khabar2.html",context={'akhbar':akhbar,'info':info})
 
 def khabar3(request):
-    return render(request,"main_app/Khabar 3.html",context={'akhbar':akhbar,'info':info})
+    return render(request,"main_app/Khabar3.html",context={'akhbar':akhbar,'info':info})
 
 def khabar4(request):
-    return render(request,"main_app/Khabar 4.html",context={'akhbar':akhbar,'info':info})
+    return render(request,"main_app/Khabar4.html",context={'akhbar':akhbar,'info':info})
 
 def khabar5(request):
-    return render(request,"main_app/Khabar 5.html",context={'akhbar':akhbar,'info':info})
+    return render(request,"main_app/Khabar5.html",context={'akhbar':akhbar,'info':info})
 
 def khabar6(request):
-    return render(request,"main_app/Khabar 6.html",context={'akhbar':akhbar,'info':info})
+    return render(request,"main_app/Khabar6.html",context={'akhbar':akhbar,'info':info})
 
 def khabar7(request):
-    return render(request,"main_app/Khabar 7.html",context={'akhbar':akhbar,'info':info})
+    return render(request,"main_app/Khabar7.html",context={'akhbar':akhbar,'info':info})
 
 def Shahrie(request):
     return render(request,"main_app/shahrie.html",context={'akhbar':akhbar,'info':info,'shahrie':shahrie})
